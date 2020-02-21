@@ -13,15 +13,22 @@ function App() {
         </div>
       </div>
       <div class="container">
-        <div class="row">
-          <div class="col-sm">Train Name</div>
-          <div class="col-sm">Destination</div>
-          <div class="col-sm">Frequency</div>
-          <div class="col-sm">Next Arrival</div>
-          <div class="col-sm">Minutes Away</div>
-        </div>
+        <table class="table">
+          <thead class="thread-dark">
+            <tr>
+              <th scope="col">Train Name</th>
+              <th scope="col">Destination</th>
+              <th scope="col">Frequency</th>
+              <th scope="col">Next Arrival</th>
+              <th scope="col"> Minutes Away</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
       </div>
-      <TrainInput />
+      <div class="container">
+        <TrainInput />
+      </div>
     </div>
   );
 }
